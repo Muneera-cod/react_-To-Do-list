@@ -23,6 +23,10 @@ body{
 .inputli{
   width: 300px;
   padding:10px 20px;
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(79, 22, 22);
+  
 }
 
 
