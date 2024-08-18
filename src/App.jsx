@@ -5,10 +5,6 @@ import './App.css'
 function App() {
   const [newTodo,setNewTodo] = useState("")
   const [todos,setTodos] = useState([])
-  
-  const handleSubmit=(e)=>{
-    e.preventDefault();
-  }
  
   const addTodo=()=>{
     if(newTodo.trim() !== ""){
@@ -24,10 +20,10 @@ function App() {
     <div className='container'>
       <div className='todocontainer'>
         <h2>To Do list</h2>
-        <form className='formm' onSubmit={handleSubmit}>
+       
         <input type="text" placeholder='+Add a task' className='inputli' value={newTodo} onChange={(event)=>setNewTodo(event.target.value)}/>
         <button className='btn2' onClick={addTodo}>ADD</button>
-        </form>
+        
         <div className='list'>
           <ol>
              {todos.map((todo,index) =>
